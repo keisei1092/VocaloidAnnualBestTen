@@ -4,6 +4,7 @@
   "main": "webpack.config.js",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.15.3",
     "babel-loader": "^6.2.10",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-react-html-attrs": "^2.0.0",
