@@ -4,6 +4,11 @@ import axios from "axios";
 
 class Layout extends React.Component {
   componentDidMount() {
+    axios
+      .get("http://localhost:4567")
+      .then(function(result) {
+        console.log(result);
+      })
     console.log("mounted. :]");
   }
   render() {
