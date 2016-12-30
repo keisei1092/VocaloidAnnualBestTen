@@ -5,7 +5,7 @@ import axios from "axios";
 class Layout extends React.Component {
   componentDidMount() {
     axios
-      .get("http://localhost:4567")
+      .get("http://localhost:3000")
       .then(function(result) {
         console.log(result);
       })
