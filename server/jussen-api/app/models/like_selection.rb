@@ -1,0 +1,2 @@
+class LikeSelection < ApplicationRecord
+end

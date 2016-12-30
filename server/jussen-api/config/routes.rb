@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :like_selections
+  resources :like_songs
   resources :selections
   resources :users
   resources :songs
