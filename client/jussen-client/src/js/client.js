@@ -1,23 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Router, Route, IndexRoute, hashHistory } from "react-router";
+
 import axios from "axios";
 
-class Layout extends React.Component {
-  componentDidMount() {
-    axios
-      .get("http://localhost:3000")
-      .then(function(result) {
-        console.log(result);
-      })
-    console.log("mounted. :]");
-  }
-  render() {
-    return (
-      <h1>jussen-client</h1>
-    );
-  }
-}
+import Layout from "./pages/Layout";
+import Featured from "./pages/Featured";
 
 const app = document.getElementById('app');
 
-ReactDOM.render(<Layout/>, app);
+ReactDOM.render(
+  <Router history={hashHistory}>
+    <Route path="/" component={Layout}>
+      <IndexRoute
+    </Route>
+  </Router>,
+  app);
